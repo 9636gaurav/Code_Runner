@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Visual_Studio_Icon_2022.svg.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ec7e511976.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1>Enter Your Code</h1>
+    <div class="container">
+        <div class="left">
+            <label for> <img src="htmlicon" alt="" id="img1"> <i class="fa-brands fa-html5"></i>HTML</label>
+            <textarea name="html" id="html-code" onkeyup="run()"></textarea>
+
+            <label for> <img src="cssicon" alt="" id="img2"> <i class="fa-brands fa-css3"></i>CSS</label>
+            <textarea name="html" id="css-code" onkeyup="run()"></textarea>
+
+            <label for> <img src="java" alt="" id="img3"> <i class="fa-brands fa-js"></i>JavaScript</label>
+            <textarea name="html" id="JS-code" onkeyup="run()"></textarea>
+        </div>
+        <div class="right">
+            <label><i class="fa-solid fa-play"></i>Output</label>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
